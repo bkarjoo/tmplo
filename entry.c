@@ -1,4 +1,5 @@
-#include "../etc/functions.h"
+#include "../functions.h"
+#include "vars.h"
 entry_order_type = LIMIT
 entry_order_side = BUY
 entry_destination = CSFB

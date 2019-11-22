@@ -1,4 +1,5 @@
-#include "../etc/functions.h"
+#include "../functions.h"
+#include "vars.h"
 basket_name = xyz
 basket_description = desc
 activate_dynamic_basket_rules = TRUE
