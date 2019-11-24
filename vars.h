@@ -10,7 +10,7 @@
 #define basket_rule adrs > 1
 
 // entry
-#define entry_trig last > 0
+#define entry_trig close > 0
 #define entry_price close * 1.01
 
 // launch rules
@@ -23,8 +23,8 @@
 // stop
 #define hard_stop 0
 #define stop_trigger time_in_position_sec > 300
-#define stop_price minute_low(20)
+#define stop_price minute_low(20) - minute_range(3)
 
 // target
-#define target_trigger last > execution * 1.01
+#define target_trigger last > execution * 1.1
 #define target_price ask + .01
