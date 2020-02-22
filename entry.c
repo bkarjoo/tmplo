@@ -2,7 +2,7 @@
 #include "vars.h"
 entry_trigger =
 {
-  entry_trig and not ssr_restriction
+  entry_trig
 }
 entry_order_type = LIMIT
 entry_order_side = BUY
