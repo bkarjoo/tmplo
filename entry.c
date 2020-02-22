@@ -1,14 +1,18 @@
 #include "../functions.h"
 #include "vars.h"
+entry_trigger =
+{
+  entry_trig and not ssr_restriction
+}
 entry_order_type = LIMIT
 entry_order_side = BUY
-entry_destination = CSFB
+entry_destination = PATHFINDER
 entry_size = 100
 entry_tif = TIF_OPENING
 entry_tif_seconds =
 entry_order_limit =
 {
-  if(entry_trig, entry_price, 0)
+  entry_price
 }
 
 entry_aggregated_TIF = FALSE
